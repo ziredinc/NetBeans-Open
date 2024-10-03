@@ -5,7 +5,7 @@ return -- not needed, but shows that the script stops here when "run"
 
 on open of finderObjects -- "open" handler triggered by drag'n'drop launches
 	
-	set netBeansAppNameLastRev to do shell script "ls -1 /Applications/NetBeans/ | grep -e '^NetBeans' | sed 's/.app//g' | sort | tail -n 1"
+	set netBeansAppNameLastRev to do shell script "ls -1 /Applications/NetBeans/ | grep -e '^Apache NetBeans' | sed 's/.app//g' | sort | tail -n 1"
 	
 	set netBeansAppNameLastRev to netBeansAppNameLastRev & ".app"
 	
